@@ -1,17 +1,17 @@
 # Use official Python base image
 FROM python:3.11-slim
 
-# Set work directory
+# Set working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container
-COPY . /app
+# Copy all files to the container
+COPY . .
 
-# Install Flask
-RUN pip install flask
+# Install dependencies
+RUN pip install --no-cache-dir flask
 
-# Expose the port Flask is running on
+# Expose port
 EXPOSE 5000
 
-# Command to run the app
+# Run the app
 CMD ["python", "app.py"]
