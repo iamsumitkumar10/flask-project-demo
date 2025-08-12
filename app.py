@@ -10,5 +10,9 @@ def home():
 def about():
     return "This is the About Page."
 
+@app.route('/contact')
+def about():
+    return "This is the contact Page."
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
