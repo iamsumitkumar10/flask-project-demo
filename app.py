@@ -11,7 +11,7 @@ def about():
     return "This is the About Page."
 
 @app.route('/contact')
-def about():
+def contact():
     return "This is the contact Page."
 
 if __name__ == '__main__':
